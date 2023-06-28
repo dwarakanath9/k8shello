@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: 
+        app: k8shello
     spec:
       containers:
         - name: springboot
@@ -20,7 +20,9 @@ spec:
           env:
             - name: PORT
               value: "8080"
+
 ---
+
 apiVersion: v1
 kind: Service
 metadata:
