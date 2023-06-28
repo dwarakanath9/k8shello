@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: dwarak1262/k8shello:k8shello-v1.0.0
+          image: dwarak1262/k8shello:k8shello
           ports:
             - containerPort: 8080
           env:
