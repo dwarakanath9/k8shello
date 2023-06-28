@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: k8shello
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: k8shello
@@ -13,7 +13,7 @@ spec:
         app: k8shello
     spec:
       containers:
-        - name: springboot
+        - name: springBoot
           image: dwarak1262/k8shello:k8shello
           ports:
             - containerPort: 8080
