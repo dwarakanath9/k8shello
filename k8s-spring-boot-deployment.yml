@@ -16,10 +16,10 @@ spec:
         - name: springboot
           image: dwarak1262/k8shello:k8shello
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
           env:
             - name: PORT
-              value: "8080"
+              value: "8081"
 
 ---
 
@@ -31,6 +31,6 @@ spec:
   type: LoadBalancer
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 8081
   selector:
     app: k8shello
