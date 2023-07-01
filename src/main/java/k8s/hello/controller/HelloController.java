@@ -10,8 +10,8 @@ import java.net.UnknownHostException;
 public class HelloController {
 
     @GetMapping
-    public String getString(){
-        return "hello world";
+    public String getString() throws UnknownHostException{
+        return InetAddress.getLocalHost().getHostName();
     }
 
     @GetMapping("/ip")
