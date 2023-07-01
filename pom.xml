@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>k8s.hello</groupId>
 	<artifactId>k8shello</artifactId>
+	<version>0.0.1</version>
 	<name>k8shello</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
