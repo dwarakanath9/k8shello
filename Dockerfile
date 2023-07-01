@@ -1,7 +1,7 @@
 FROM openjdk:11-jre-slim
 EXPOSE 8050
-ADD target/spring-boot-docker-*.jar spring-boot-docker-*.jar
-ENTRYPOINT ["java", "-jar","/spring-boot-docker-*.jar"]
+ADD target/k8shello-*.jar sk8shello-test.jar
+ENTRYPOINT ["java", "-jar","/sk8shello-test.jar"]
 
 
 
